@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+.navBody{
+  padding: 30px;
+}
+.navbar{
+  display: flex;
+  border: 8px solid gray;
+  padding: px;
+  margin-left: 70px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+
+}
+.item {
+  margin-right: 105px;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.item:hover {
+  color: white; /* Change text color on hover */
+  background-color: blue; /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 5px; /* Optional: Add some border radius for better effect */
+}
+.divContact {
+  padding: 20px;
+}
+
+.formDiv {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}

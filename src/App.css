@@ -51,26 +51,26 @@
 }
 .item {
   margin-right: 105px;
-  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .item:hover {
-  color: white; /* Change text color on hover */
-  background-color: blue; /* Change background color on hover */
-  cursor: pointer; /* Change cursor to pointer */
-  border-radius: 5px; /* Optional: Add some border radius for better effect */
+  color: white; 
+  background-color: blue; 
+  cursor: pointer; 
+  border-radius: 5px;
 }
 .divContact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #f06, #f79);
+  background: #f4f4f4;
   overflow: hidden;
 }
 
 .formDiv {
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff; 
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -104,13 +104,16 @@
 }
 
 .input:focus {
-  border-color: #f06;
+  border-color: #007BFF; 
   background: #fff;
   outline: none;
 }
 
 .input::placeholder {
-  color: transparent; /* Hide the placeholder text */
+  color: #aaa; }
+
+.input:focus::placeholder {
+  color: transparent; 
 }
 
 .input:focus + label,
@@ -118,7 +121,7 @@
   top: -0.75rem;
   left: 0.75rem;
   font-size: 0.75rem;
-  color: #f06;
+  color: #007BFF; 
 }
 
 textarea {
@@ -127,7 +130,7 @@ textarea {
 }
 
 .button {
-  background: #f06;
+  background: #007BFF; 
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -138,7 +141,7 @@ textarea {
 }
 
 .button:hover {
-  background: #e05;
+  background: #0056b3;
 }
 
 .successMessage,
@@ -152,9 +155,8 @@ textarea {
 }
 
 .successMessage {
-  background: #4caf50;
+  background: #4caf50; 
 }
 
 .errorMessage {
-  background: #f44336;
-}
+  background: #f44336; }

@@ -25,7 +25,7 @@ export default function ContactMe() {
         setSuccessMessage("");
         setErrorMessage("");
 
-        // Send email using EmailJS
+      
         emailjs.send(
             'service_helqefl',
             'template_rgcwz9l',
@@ -40,14 +40,14 @@ export default function ContactMe() {
             console.log('SUCCESS!', response.status, response.text);
             setSuccessMessage("Message sent successfully!");
 
-            // Clear the form
+         
             setFormData({
                 name: "",
                 email: "",
                 message: ""
             });
 
-            // Hide the success message after 3 seconds
+           
             setTimeout(() => {
                 setSuccessMessage("");
             }, 3000);
@@ -55,7 +55,7 @@ export default function ContactMe() {
             console.log('FAILED...', err);
             setErrorMessage("Failed to send message. Please try again.");
 
-            // Hide the error message after 3 seconds
+            
             setTimeout(() => {
                 setErrorMessage("");
             }, 3000);

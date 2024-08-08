@@ -61,15 +61,29 @@
   border-radius: 5px; /* Optional: Add some border radius for better effect */
 }
 .divContact {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f06, #f79);
+  overflow: hidden;
 }
 
 .formDiv {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.formDiv h2 {
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #333;
 }
 
 .form {
@@ -78,21 +92,69 @@
 }
 
 .input {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.input:focus {
+  border-color: #f06;
+  background: #fff;
+  outline: none;
+}
+
+.input::placeholder {
+  color: transparent; /* Hide the placeholder text */
+}
+
+.input:focus + label,
+.input:not(:placeholder-shown) + label {
+  top: -0.75rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  color: #f06;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
 }
 
 .button {
-  padding: 10px;
+  background: #f06;
+  color: #fff;
   border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
+  border-radius: 4px;
+  padding: 1rem;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 .button:hover {
-  background-color: #45a049;
+  background: #e05;
+}
+
+.successMessage,
+.errorMessage {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.successMessage {
+  background: #4caf50;
+}
+
+.errorMessage {
+  background: #f44336;
 }
